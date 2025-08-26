@@ -29,13 +29,19 @@ body {
     padding-top: 100px;
     font-size: 18px;
 }
+.wrapper{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 13px 11px 8px 5px rgba(34, 60, 80, 0.22);
+}
 .wrapper-main{
     background: linear-gradient(
             180deg,
             hsl(252, 100%, 67%) 0%,
             hsl(241, 81%, 54%) 100%
     );
-    padding: 30px 20px;
+    padding: 30px;
     text-align: center;
     border-radius: 30px;
 }
@@ -82,4 +88,88 @@ body {
 }
 .wrapper-main__title h2{
     font-weight: bold;
+}
+.wrapper-stat{
+    padding: 30px;
+}
+.wrapper-stat > div{
+    margin-bottom: 25px;
+}
+.wrapper-stat > div:last-child{
+    margin-bottom: 0px;
+}
+.wrapper-stat__subtitle{
+    color: hsl(224, 30%, 27%);
+    text-align: left;
+    width: 100%;
+}
+.wrapper-stat__subtitle h4{
+    font-weight: bold;
+}
+.wrapper-stat__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    font-weight: bold;
+}
+.wrapper-stat__list{
+    width: 100%;
+}
+.wrapper-stat__list li{
+    list-style: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: none;
+    transition: .3s ease-in-out;
+}
+.wrapper-stat__list li:hover{
+    box-shadow: 0px 0px 15px 5px hsl(224deg 30% 27% / 31%);
+}
+.wrapper-stat__list ul{
+    padding: 0;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.wrapper-stat__numb{
+    color: grey;
+    font-weight: normal;
+}
+.wrapper-stat__numb span{
+    color: hsl(224, 30%, 27%);
+    font-weight: bold;
+}
+.wrapper-stat__red{
+    background-color: hsl(0deg 100% 67% / 14%);
+    color: hsl(0deg 100% 67% / 65%);
+}
+.wrapper-stat__yellow{
+    background-color: hsl(39deg 100% 56% / 18%);
+    color: hsl(39deg 100% 56% / 55%)
+}
+.wrapper-stat__green{
+    background-color: hsl(166deg 100% 37% / 18%);
+    color: hsl(166deg 100% 37% / 62%)
+}
+.wrapper-stat__blue{
+    background-color: hsl(234deg 85% 45% / 17%);
+    color: hsl(234deg 85% 45% / 59%)
+}
+.wrapper-stat__btn{
+    width: 100%;
+}
+.wrapper-stat__btn button{
+    width: 100%;
+    background-color: hsl(224, 30%, 27%);
+    border: 2px solid hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    line-height: 3;
+    border-radius: 30px;
+    transition: .3s ease-in-out;
+    font-weight: bold;
+}
+.wrapper-stat__btn button:hover{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(224, 30%, 27%);
 }
